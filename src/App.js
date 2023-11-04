@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieList from './components/MovieList';
 import MovieHeader from './components/MovieHeader';
 import SearchBar from './components/SearchBar';
+import MyList from './components/MyList';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
         <SearchBar searchValue={searchVar} setSearchValue={setSearchVar} />
       </div>
       <div className='row'>
-        <MovieList movies = {movies} />
+        <MovieList movies = {movies} listComponent={MyList} />
       </div>
     </div>
   
